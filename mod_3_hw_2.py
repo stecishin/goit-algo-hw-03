@@ -7,8 +7,8 @@ def get_numbers_ticket(min=1, max=1000, quantity=4):
             win_num.sort()
             return win_num
         else:
-            return f"Потрібно вводити числа від 1 до 1000 включно!"
+            return
     except ValueError:
-        return f"Некоректні дані! Правила вводу: (max - min) >= quantity < max > min "
+        return
 
-print(get_numbers_ticket(11, 20, 5))
+print(get_numbers_ticket(2, 2000, 5))
